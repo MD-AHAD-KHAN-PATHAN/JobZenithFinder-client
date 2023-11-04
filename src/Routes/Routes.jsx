@@ -29,7 +29,7 @@ const Routes = createBrowserRouter([
                 element: <Login></Login>
             },
             {
-                path: '/mybid',
+                path: '/mybids',
                 element: <MyBids></MyBids>
             },
             {
@@ -37,11 +37,11 @@ const Routes = createBrowserRouter([
                 element: <AddJob></AddJob>
             },
             {
-                path: '/myposted',
+                path: '/mypostedjob',
                 element: <MyPosted></MyPosted>
             },
             {
-                path: '/bidrequest',
+                path: '/bidrequests',
                 element: <BidRequest></BidRequest>
             },
             {

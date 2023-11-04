@@ -8,9 +8,10 @@ const Navbar = () => {
 
     const navLink = <>
         <li><NavLink to='/'>Home</NavLink></li>
-        <li><NavLink to='/terms'>Terms & Condition</NavLink></li>
-        <li><NavLink to='/addProduct'>Add Product</NavLink></li>
-        <li><NavLink to='/myCart'>My Cart</NavLink></li>
+        <li><NavLink to='/addjob'>Add job</NavLink></li>
+        <li><NavLink to='/mypostedjob'>My posted jobs</NavLink></li>
+        <li><NavLink to='/mybids'>My Bids</NavLink></li>
+        <li><NavLink to='/bidrequests'>Bid Requests</NavLink></li>
     </>
 
     return (
@@ -25,7 +26,8 @@ const Navbar = () => {
                             {navLink}
                         </ul>
                     </div>
-                    <Link to='/' className="w-40"><img src="https://i.ibb.co/y8QNzhC/Screenshot-2023-10-18-012725.jpg" alt="" /></Link>
+                    <Link to='/' className="w-12"><img src="https://i.ibb.co/phvWTDq/Logo.png" alt="" /></Link>
+                    <Link to='/' className="font-bold text-xl text-teal-400"><p>Job Zenith</p></Link>
                 </div>
                 <div className="navbar-center hidden lg:flex" data-aos="fade-down">
                     <ul className="menu menu-horizontal px-1">
@@ -53,7 +55,7 @@ const Navbar = () => {
                         </div>
                             :
                             <Link to='/login'>
-                                <button className="btn btn-ghost" data-aos="fade-down">Login</button>
+                                <button className="btn btn-ghost text-teal-400 border-2 border-teal-500 hover:text-white hover:bg-teal-400" data-aos="fade-down">Sign In</button>
                             </Link>
                     }
                 </div>
