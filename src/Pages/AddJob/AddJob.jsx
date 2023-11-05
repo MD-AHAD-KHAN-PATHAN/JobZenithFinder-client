@@ -1,4 +1,4 @@
-import { toast } from "react-toastify";
+import { ToastContainer, toast } from "react-toastify";
 import UseHooks from "../../Components/Hooks/UseHooks";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
@@ -6,7 +6,7 @@ import { useState } from "react";
 const AddJob = () => {
 
     const { user } = UseHooks();
-    const navigate = useNavigate()
+    const navigate = useNavigate();
     const [category, setCategory] = useState('');
 
     function slow() {
@@ -30,27 +30,30 @@ const AddJob = () => {
         const description = form.description.value;
         const maximum = form.maximum.value;
         const minimum = form.minimum.value;
+        const photo = form.photo.value;
 
-        const jobDetails = { email, title, deadline, description, maximum, minimum, category }
+        const jobCategory = category.toUpperCase();
+
+        const jobDetails = { email, title, deadline, description, maximum, minimum, photo, jobCategory}
 
         console.log(jobDetails)
 
-        // fetch('https://brand-shop-server-ten-kappa.vercel.app/car', {
-        //     method: 'POST',
-        //     headers: {
-        //         'content-type': 'application/json'
-        //     },
-        //     body: JSON.stringify(jobDetails)
-        // })
-        //     .then(res => res.json())
-        //     .then(data => {
-        //         console.log(data);
-        //         if (data.insertedId) {
-        //             toast.success('Job posted successfully');
-        //             form.reset();
-        //             setTimeout(slow, 2000);
-        //         }
-        //     })
+        fetch('http://localhost:5000/job', {
+            method: 'POST',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(jobDetails)
+        })
+            .then(res => res.json())
+            .then(data => {
+                console.log(data);
+                if (data.insertedId) {
+                    toast.success('Job posted successfully');
+                    form.reset();
+                    setTimeout(slow, 2000);
+                }
+            })
     }
 
     return (
@@ -114,19 +117,33 @@ const AddJob = () => {
                         </label>
                     </div>
                 </div>
-                <div className="flex gap-6 mt-6">
-                    <select name="" id="" value={category} onChange={handleCategory} className="w-full p-4 rounded-md input-group">
-                        <option value="">Job Category</option>
-                        <option value="web development">web development</option>
-                        <option value="digital marketing">digital marketing</option>
-                        <option value="graphics design">graphics design</option>
-                    </select>
+                <div className="md:flex gap-6">
+                    <div className="form-control md:w-1/2" data-aos="zoom-in-down" data-aos-duration="1000">
+                        <label className="label">
+                            <span className="label-text">Photo</span>
+                        </label>
+                        <label className="input-group">
+                            <input type="url" name="photo" placeholder="Enter Maximum salary" className="input w-full" required />
+                        </label>
+                    </div>
+                    <div className="md:w-1/2" data-aos="zoom-in-down" data-aos-duration="1000">
+                        <label className="label">
+                            <span className="label-text">Category</span>
+                        </label>
+                        <select name="" id="" value={category} onChange={handleCategory} className="p-3 rounded-md input-group">
+                            <option value="">Select a Category</option>
+                            <option value="web development">web development</option>
+                            <option value="digital marketing">digital marketing</option>
+                            <option value="graphics design">graphics design</option>
+                        </select>
+                    </div>
                 </div>
                 <div>
                     <div className="mt-6">
                         <input type="submit" value="Add Job" className="py-2 font-bold w-full bg-white border-2 border-teal-500 cursor-pointer hover:bg-teal-500 hover:text-white" data-aos="fade-up" />
                     </div>
                 </div>
+                <ToastContainer></ToastContainer>
             </form>
         </div>
     );
