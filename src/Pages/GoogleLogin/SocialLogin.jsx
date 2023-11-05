@@ -19,9 +19,9 @@ const SocialLogin = () => {
     }
     return (
         <>
-            <div className="divider text-orange-500">continue with</div>
+            <div className="divider text-teal-500">Continue with</div>
             <div className="">
-                <button onClick={handleLogin} className="btn bg-white  hover:bg-orange-400 hover:text-white text-orange-500 border-1 border-orange-400">Google</button>
+                <button onClick={handleLogin} className="btn bg-white  hover:bg-teal-400 hover:text-white text-teal-500 border-1 border-teal-400">Google</button>
             </div>
         </>
     );
