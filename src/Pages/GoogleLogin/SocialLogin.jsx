@@ -1,6 +1,6 @@
 import { toast } from "react-toastify";
-import { Navigate } from "react-router-dom";
 import UseHooks from "../../Components/Hooks/UseHooks";
+import { Navigate } from "react-router-dom";
 
 const SocialLogin = () => {
     const {googleLogin} = UseHooks();
