@@ -1,12 +1,14 @@
 import { toast } from "react-toastify";
 import UseHooks from "../../Components/Hooks/UseHooks";
-import { Navigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const SocialLogin = () => {
     const {googleLogin} = UseHooks();
 
+    const navigate = useNavigate()
+
     function slow(){
-        Navigate(location?.state ? location.state : '/');
+        navigate(location?.state ? location.state : '/');
     }
 
     const handleLogin = () => {
