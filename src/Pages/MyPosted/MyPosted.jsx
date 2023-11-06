@@ -23,7 +23,7 @@ const MyPosted = () => {
                 mypostedjobs.length > 0 ? <div className="min-h-screen my-20">
                     <div className="grid grid-cols-3 gap-4">
                         {
-                            mypostedjobs?.map(item => <PostCard key={item._id} item={item}></PostCard>)
+                            mypostedjobs?.map(item => <PostCard key={item._id} item={item} mypostedjobs={mypostedjobs} setMypostedJobs={setMypostedJobs}></PostCard>)
                         }
                     </div>
                 </div> : <div className="h-[60vh] flex justify-center items-center"><h1 className="text-3xl font-bold text-red-500"> you do not post job</h1></div>
