@@ -17,8 +17,6 @@ const MyBids = () => {
             })
     }, [sellerEmail])
 
-    console.log(myBidJobs.length);
-
     return (
         <div>
             {
@@ -53,7 +51,7 @@ const MyBids = () => {
 
                         </table>
                     </div>
-                </div> : <div className="h-[60vh] flex justify-center items-center"><h1 className="text-3xl font-bold text-red-500"> you do not bid job</h1></div>
+                </div> : <div className="h-[60vh] flex justify-center items-center"><h1 className="text-3xl font-bold text-red-500"> you do not bid for job</h1></div>
             }
 
         </div>
