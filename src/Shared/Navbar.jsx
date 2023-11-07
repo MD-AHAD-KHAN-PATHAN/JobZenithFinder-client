@@ -27,7 +27,7 @@ const Navbar = () => {
                         </ul>
                     </div>
                     <Link to='/' className="w-12"><img src="https://i.ibb.co/phvWTDq/Logo.png" alt="" /></Link>
-                    <Link to='/' className="font-bold text-xl text-teal-400"><p>Job Zenith</p></Link>
+                    <Link to='/' className="font-bold text-xl text-teal-400"><p>JobZenith</p></Link>
                 </div>
                 <div className="navbar-center hidden lg:flex" data-aos="fade-down">
                     <ul className="menu menu-horizontal px-1">

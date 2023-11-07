@@ -19,9 +19,11 @@ const MyPosted = () => {
 
     return (
         <div>
+            <h1 className='lg:text-5xl md:text-4xl text-3xl font-bold border-l-8 border-l-teal-600 p-4 mt-20'>My Posted Jobs</h1>
+
             {
-                mypostedjobs.length > 0 ? <div className="min-h-screen my-20">
-                    <div className="grid grid-cols-3 gap-4">
+                mypostedjobs.length > 0 ? <div className="min-h-screen lg:my-20 my-10">
+                    <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 lg:mx-0 md:mx-10 mx-6">
                         {
                             mypostedjobs?.map(item => <PostCard key={item._id} item={item} mypostedjobs={mypostedjobs} setMypostedJobs={setMypostedJobs}></PostCard>)
                         }

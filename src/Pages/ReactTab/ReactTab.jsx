@@ -12,12 +12,12 @@ const ReactTab = () => {
 
     return (
         <>
-            <h1 className='text-5xl font-bold border-l-8 border-l-teal-600 p-4 mt-20'>Job Category</h1>
+            <h1 className='lg:text-5xl md:text-4xl text-3xl font-bold border-l-8 border-l-teal-600 p-4 mt-20'>Job Category</h1>
             <Tabs className="my-12">
                 <TabList>
-                    <Tab>Web development</Tab>
-                    <Tab>Digital marketing</Tab>
-                    <Tab>Graphics design</Tab>
+                    <Tab><p className='md:text-lg text-sm'>Web development</p></Tab>
+                    <Tab><p className='md:text-lg text-sm'>Digital marketing</p></Tab>
+                    <Tab><p className='md:text-lg text-sm'>Graphics design</p></Tab>
                 </TabList>
 
                 <TabPanel>

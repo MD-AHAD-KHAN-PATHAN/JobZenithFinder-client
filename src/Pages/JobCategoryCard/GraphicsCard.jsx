@@ -16,7 +16,7 @@ const GraphicsCard = ({graphics}) => {
     },[graphics])
 
     return (
-        <div className="grid grid-cols-3 gap-4 min-h-screen">
+        <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:mx-0 md:mx-10 mx-6 gap-4 min-h-screen">
             {
                 graphicsCard?.map(item => <Card key={item._id} item={item}></Card>)
             }
