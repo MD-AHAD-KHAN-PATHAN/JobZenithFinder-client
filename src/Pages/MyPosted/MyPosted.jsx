@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import UseHooks from "../../Components/Hooks/UseHooks";
 import PostCard from "./PostCard";
+import { Helmet } from "react-helmet";
 
 const MyPosted = () => {
 
@@ -18,6 +19,12 @@ const MyPosted = () => {
     }, [user.email])
 
     return (
+        <>
+        <Helmet>
+                <meta charSet="utf-8" />
+                <title>JobZenith | My Posted Job</title>
+                <link rel="canonical" href="https://i.ibb.co/Gvs72Kz/favicon-2.png" />
+            </Helmet>
         <div>
             <h1 className='lg:text-5xl md:text-4xl text-3xl font-bold border-l-8 border-l-teal-600 p-4 mt-20'>My Posted Jobs</h1>
 
@@ -32,6 +39,7 @@ const MyPosted = () => {
             }
 
         </div>
+        </>
 
     );
 };

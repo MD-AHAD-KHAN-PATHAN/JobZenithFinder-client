@@ -85,7 +85,7 @@ const BidRequestTable = ({ item, myBidRequested, setMyBidRequested }) => {
                 <div className="flex items-center space-x-3">
                     <div className="avatar">
                         <div className="mask mask-squircle w-12 h-12">
-                            <img src={photo} alt="Avatar Tailwind CSS Component" />
+                            <img src={photo} alt="bidder image" />
                         </div>
                     </div>
                     <div>
@@ -94,6 +94,7 @@ const BidRequestTable = ({ item, myBidRequested, setMyBidRequested }) => {
                     </div>
                 </div>
             </td>
+            <td>{price}</td>
             <td>
                 {SellerDeadline}
                 <br />

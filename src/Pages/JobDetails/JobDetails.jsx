@@ -52,7 +52,6 @@ const JobDetails = () => {
                     setTimeout(slow, 2000);
                 }
             })
-
     }
 
     return (

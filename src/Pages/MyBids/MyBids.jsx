@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import UseHooks from "../../Components/Hooks/UseHooks";
 import BidTable from "./BidTable";
+import { Helmet } from "react-helmet";
 
 const MyBids = () => {
 
@@ -17,7 +18,19 @@ const MyBids = () => {
             })
     }, [sellerMail])
 
+    myBidJobs.sort((a, b) => {
+        const statusOrder = ['complete', 'in progress', 'pending', 'rejected'];
+        return statusOrder.indexOf(a.status) - statusOrder.indexOf(b.status);
+    });
+
+
     return (
+        <>
+        <Helmet>
+                <meta charSet="utf-8" />
+                <title>JobZenith | My Bids</title>
+                <link rel="canonical" href="https://i.ibb.co/PcrP9Rb/favicon-4.png" />
+            </Helmet>
         <div>
             {
                 myBidJobs.length > 0 ? <div className="min-h-[60vh] my-20">
@@ -55,6 +68,7 @@ const MyBids = () => {
             }
 
         </div>
+        </>
     );
 };
 

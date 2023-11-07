@@ -9,6 +9,7 @@ const ProgressBarSection = ({children}) => {
         <ProgressBar
             percent={children}
             filledBackground="linear-gradient(to right, #fefb72, #f0bb31)"
+            width="100px"
         >
             <Step transition="scale">
                 {({ accomplished }) => (

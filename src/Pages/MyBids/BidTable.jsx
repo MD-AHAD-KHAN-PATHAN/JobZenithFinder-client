@@ -41,7 +41,7 @@ const BidTable = ({item}) => {
     if(status === 'in progress'){
         progressValue = 50;
     }
-    
+
     return (
         <tr>
             <td>
