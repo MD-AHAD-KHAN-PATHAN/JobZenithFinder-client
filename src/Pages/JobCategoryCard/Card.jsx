@@ -9,7 +9,7 @@ const Card = ({ item }) => {
 
     return (
 
-        <div className="card card-compact bg-base-100 shadow-md">
+        <div className="card-compact bg-base-100 shadow-md rounded-md">
             <figure><img src={photo} alt="Shoes" /></figure>
             <div className="card-body">
                 <h2 className="card-title">{title}</h2>

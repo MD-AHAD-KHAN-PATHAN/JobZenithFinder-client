@@ -100,12 +100,6 @@ const BidRequestTable = ({ item, myBidRequested, setMyBidRequested }) => {
                 {/* <span className="badge badge-ghost badge-sm">{ByerEmail}</span> */}
             </td>
             <td>{Status}</td>
-            {/* {Status === 'rejected' ? <th><ProgressBarSection>{value}</ProgressBarSection></th> : <> <th>
-                <button onClick={() => handleReject(_id)} className="btn btn-ghost btn-xs">Reject</button>
-            </th>
-                <th>
-                    <button onClick={() => handleAccept(_id)} className="btn btn-ghost btn-xs">Accept</button>
-                </th> </>} */}
             {
                 Status === 'rejected' ? <th><ProgressBarSection>{rejectedValue}</ProgressBarSection></th> : <>
                     {

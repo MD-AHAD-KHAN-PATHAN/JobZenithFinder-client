@@ -7,11 +7,11 @@ const Navbar = () => {
     
 
     const navLink = <>
-        <li><NavLink to='/'>Home</NavLink></li>
-        <li><NavLink to='/addjob'>Add job</NavLink></li>
-        <li><NavLink to='/mypostedjob'>My posted jobs</NavLink></li>
-        <li><NavLink to='/mybids'>My Bids</NavLink></li>
-        <li><NavLink to='/bidrequests'>Bid Requests</NavLink></li>
+        <li><NavLink to='/' className={"font-bold text-teal-400"}>Home</NavLink></li>
+        <li><NavLink to='/addjob' className={"font-bold text-teal-400"}>Add job</NavLink></li>
+        <li><NavLink to='/mypostedjob' className={"font-bold text-teal-400"}>My posted jobs</NavLink></li>
+        <li><NavLink to='/mybids' className={"font-bold text-teal-400"}>My Bids</NavLink></li>
+        <li><NavLink to='/bidrequests' className={"font-bold text-teal-400"}>Bid Requests</NavLink></li>
     </>
 
     return (

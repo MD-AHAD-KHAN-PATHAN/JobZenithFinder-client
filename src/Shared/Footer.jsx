@@ -4,14 +4,14 @@ const Footer = () => {
         <footer className="footer p-10 bg-base-200 text-base-content">
             <aside>
                 <img className="w-20" src="https://i.ibb.co/phvWTDq/Logo.png" alt="" />
-                <p>Job Zenith Ltd.<br />Providing reliable tech since 2012</p>
+                <p>Job Zenith Ltd.<br />Providing reliable service since 2015</p>
             </aside>
             <nav>
                 <header className="footer-title">Services</header>
-                <a className="link link-hover">Branding</a>
-                <a className="link link-hover">Design</a>
-                <a className="link link-hover">Marketing</a>
-                <a className="link link-hover">Advertisement</a>
+                <a className="link link-hover">Job Listings</a>
+                <a className="link link-hover">Application Tracking</a>
+                <a className="link link-hover">Industry-specific Job Portals</a>
+                <a className="link link-hover">Premium Services</a>
             </nav>
             <nav>
                 <header className="footer-title">Company</header>
