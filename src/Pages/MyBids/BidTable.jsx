@@ -1,11 +1,47 @@
+import Swal from "sweetalert2";
+import ProgressBarSection from "../BidRequest/ProgressBarSection";
 
 
 const BidTable = ({item}) => {
 
 
-    const {sellerEmail, ByerEmail, title, photo, jobCategory, price, SellerDeadline, ByerDeadline, status} = item;
+    const {_id, sellerEmail, ByerEmail, title, photo, jobCategory, price, SellerDeadline, ByerDeadline, status} = item;
 
+    const handleComplite = (id) => {
 
+        const updatedata = {
+            status: "complete"
+        };
+
+        fetch(`http://localhost:5000/mybid/${_id}`, {
+            method: 'PUT',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(updatedata)
+        })
+            .then(res => res.json())
+            .then(data => {
+                console.log(data);
+                if (data.modifiedCount > 0) {
+                    Swal.fire({
+                        title: 'Success',
+                        text: 'Your get this job successfully',
+                        icon: 'success',
+                        confirmButtonText: 'Cool'
+                    })
+                }
+                // const remaining = myBidRequested.filter(row => row._id !== id);
+                // setMyBidRequested(remaining);
+            })
+    }
+
+    let progressValue = 0;
+
+    if(status === 'in progress'){
+        progressValue = 50;
+    }
+    
     return (
         <tr>
             <td>
@@ -17,18 +53,19 @@ const BidTable = ({item}) => {
                     </div>
                     <div>
                         <div className="font-bold">{title}</div>
-                        <div className="text-sm opacity-50">{sellerEmail}</div>
+                        <div className="text-sm opacity-50">{ByerEmail}</div>
                     </div>
                 </div>
             </td>
             <td>
                 {ByerDeadline}
-                <br />
-                <span className="badge badge-ghost badge-sm">{ByerEmail}</span>
             </td>
             <td>{status}</td>
             <th>
-                <button className="btn btn-ghost btn-xs">complete</button>
+                {status === 'in progress' && <ProgressBarSection>{progressValue}</ProgressBarSection>}
+            </th>
+            <th>
+                {status === 'in progress' && <button onClick={() => handleComplite(_id)} className="py-2 px-4 bg-teal-500 text-white rounded-full">complete</button>}
             </th>
         </tr>
     );

@@ -7,15 +7,15 @@ const MyBids = () => {
     const { user } = UseHooks();
     const [myBidJobs, setMyBidJobs] = useState([]);
 
-    const sellerEmail = user.email;
+    const sellerMail = user.email;
 
     useEffect(() => {
-        fetch(`http://localhost:5000/mybid?sellerEmail=${sellerEmail}`)
+        fetch(`http://localhost:5000/mybid?sellerMail=${sellerMail}`)
             .then(res => res.json())
             .then(data => {
                 setMyBidJobs(data);
             })
-    }, [sellerEmail])
+    }, [sellerMail])
 
     return (
         <div>

@@ -7,15 +7,15 @@ const BidRequest = () => {
     const { user } = UseHooks();
     const [myBidRequested, setMyBidRequested] = useState([]);
 
-    const sellerEmail = user.email;
+    const email = user.email;
 
     useEffect(() => {
-        fetch(`http://localhost:5000/mybid?sellerEmail=${sellerEmail}`)
+        fetch(`http://localhost:5000/mybid?email=${email}`)
             .then(res => res.json())
             .then(data => {
                 setMyBidRequested(data);
             })
-    }, [sellerEmail])
+    }, [email])
     
     return (
         <div>
@@ -29,13 +29,12 @@ const BidRequest = () => {
                                     <th>Name</th>
                                     <th>Deadline</th>
                                     <th>Status</th>
-                                    <th></th>
                                 </tr>
                             </thead>
                             <tbody>
                                 {/* row 1 */}
                                 {
-                                    myBidRequested.map(item => <BidRequestTable key={item._id} item={item}></BidRequestTable>)
+                                    myBidRequested.map(item => <BidRequestTable key={item._id} item={item} myBidRequested={myBidRequested} setMyBidRequested={setMyBidRequested}></BidRequestTable>)
                                 }
 
                             </tbody>
@@ -45,7 +44,6 @@ const BidRequest = () => {
                                     <th>Name</th>
                                     <th>Deadline</th>
                                     <th>Status</th>
-                                    <th></th>
                                 </tr>
                             </tfoot>
 
