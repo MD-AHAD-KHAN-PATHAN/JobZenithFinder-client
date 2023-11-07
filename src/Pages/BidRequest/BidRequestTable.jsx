@@ -56,7 +56,7 @@ const BidRequestTable = ({ item, myBidRequested, setMyBidRequested }) => {
                 if (data.modifiedCount > 0) {
                     Swal.fire({
                         title: 'Success',
-                        text: 'Your reject this job',
+                        text: 'You accept this bid',
                         icon: 'success',
                         confirmButtonText: 'Cool'
                     })
