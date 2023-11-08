@@ -13,7 +13,7 @@ Click here for the live project link : [https://astounding-basbousa-370fa6.netli
 
 # About My Project
 
-- React-based job finder Website: My project is a web application built using React, designed to showcase a renowned supercar brand's offerings.
+- React-based job finder Website: My project is a web application built using MERN.
 
 - Firebase Authentication: Users can sign up, log in, and enjoy personalized experiences through Firebase authentication, ensuring their data is secure.
 
