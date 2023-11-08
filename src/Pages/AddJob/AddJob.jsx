@@ -70,7 +70,7 @@ const AddJob = () => {
 
                 <form onSubmit={handleAddJob}>
                     <div className="md:flex gap-6">
-                        <div className="form-control md:w-1/2" data-aos="zoom-in-down" data-aos-duration="1000">
+                        <div className="form-control md:w-1/2">
                             <label className="label">
                                 <span className="label-text">Email</span>
                             </label>
@@ -78,7 +78,7 @@ const AddJob = () => {
                                 <input type="email" name="email" defaultValue={user.email} readOnly className="input w-full" required />
                             </label>
                         </div>
-                        <div className="form-control md:w-1/2" data-aos="zoom-in-down" data-aos-duration="1000">
+                        <div className="form-control md:w-1/2">
                             <label className="label">
                                 <span className="label-text">Job Title</span>
                             </label>
@@ -88,7 +88,7 @@ const AddJob = () => {
                         </div>
                     </div>
                     <div className="md:flex gap-6">
-                        <div className="form-control md:w-1/2" data-aos="zoom-in-down" data-aos-duration="1000">
+                        <div className="form-control md:w-1/2">
                             <label className="label">
                                 <span className="label-text">Deadline</span>
                             </label>
@@ -96,7 +96,7 @@ const AddJob = () => {
                                 <input type="date" name="deadline" className="input w-full" required />
                             </label>
                         </div>
-                        <div className="form-control md:w-1/2" data-aos="zoom-in-down" data-aos-duration="1000">
+                        <div className="form-control md:w-1/2">
                             <label className="label">
                                 <span className="label-text">Description</span>
                             </label>
@@ -107,7 +107,7 @@ const AddJob = () => {
 
                     </div>
                     <div className="md:flex gap-6">
-                        <div className="form-control md:w-1/2" data-aos="zoom-in-down" data-aos-duration="1000">
+                        <div className="form-control md:w-1/2">
                             <label className="label">
                                 <span className="label-text">Maximum salary</span>
                             </label>
@@ -115,7 +115,7 @@ const AddJob = () => {
                                 <input type="number" name="maximum" placeholder="Enter Maximum salary" className="input w-full" required />
                             </label>
                         </div>
-                        <div className="form-control md:w-1/2" data-aos="zoom-in-down" data-aos-duration="1000">
+                        <div className="form-control md:w-1/2">
                             <label className="label">
                                 <span className="label-text">Minimum salary</span>
                             </label>
@@ -125,7 +125,7 @@ const AddJob = () => {
                         </div>
                     </div>
                     <div className="md:flex gap-6">
-                        <div className="form-control md:w-1/2" data-aos="zoom-in-down" data-aos-duration="1000">
+                        <div className="form-control md:w-1/2">
                             <label className="label">
                                 <span className="label-text">Photo</span>
                             </label>
@@ -133,7 +133,7 @@ const AddJob = () => {
                                 <input type="url" name="photo" placeholder="Enter Maximum salary" className="input w-full" required />
                             </label>
                         </div>
-                        <div className="md:w-1/2" data-aos="zoom-in-down" data-aos-duration="1000">
+                        <div className="md:w-1/2">
                             <label className="label">
                                 <span className="label-text">Category</span>
                             </label>
@@ -147,7 +147,7 @@ const AddJob = () => {
                     </div>
                     <div>
                         <div className="mt-6">
-                            <input type="submit" value="Add Job" className="py-2 font-bold w-full bg-white border-2 border-teal-500 cursor-pointer hover:bg-teal-500 hover:text-white" data-aos="fade-up" />
+                            <input type="submit" value="Add Job" className="py-2 font-bold w-full bg-white border-2 border-teal-500 cursor-pointer hover:bg-teal-500 hover:text-white"/>
                         </div>
                     </div>
                     <ToastContainer></ToastContainer>

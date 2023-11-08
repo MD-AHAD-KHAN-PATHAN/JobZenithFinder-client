@@ -1,3 +1,4 @@
+import { AiFillFacebook, AiFillInstagram, AiFillLinkedin, AiFillTwitterSquare } from 'react-icons/ai';
 
 const Footer = () => {
     return (
@@ -14,16 +15,19 @@ const Footer = () => {
                 <a className="link link-hover">Premium Services</a>
             </nav>
             <nav>
-                <header className="footer-title">Company</header>
-                <a className="link link-hover">About us</a>
-                <a className="link link-hover">Contact</a>
-                <a className="link link-hover">Jobs</a>
-            </nav>
-            <nav>
                 <header className="footer-title">Legal</header>
                 <a className="link link-hover">Terms & Conditions</a>
                 <a className="link link-hover">Privacy policy</a>
                 <a className="link link-hover">Cookie policy</a>
+            </nav>
+            <nav>
+                <header className="footer-title">Social</header>
+                <div className="grid grid-flow-col gap-4">
+                    <a className='text-4xl text-teal-700' href="https://www.facebook.com/"><AiFillFacebook></AiFillFacebook></a>
+                    <a className='text-4xl text-teal-700' href="https://www.instagram.com/"><AiFillInstagram></AiFillInstagram></a>
+                    <a className='text-4xl text-teal-700' href="https://www.linkedin.com/"><AiFillLinkedin></AiFillLinkedin></a>
+                    <a className='text-4xl text-teal-700' href="https://twitter.com/"><AiFillTwitterSquare></AiFillTwitterSquare></a>
+                </div>
             </nav>
         </footer>
     );

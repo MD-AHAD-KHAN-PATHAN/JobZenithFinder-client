@@ -56,10 +56,10 @@ const Registration = () => {
         <>
             <div className="md:my-20 my-10">
                 <div className="md:hero-content md:mx-0 mx-6">
-                    <div className="text-center md:text-left" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="500">
+                    <div className="text-center md:text-left">
                         <img className='md:max-w-lg max-w-sm' src="https://i.ibb.co/x1dw8nN/undraw-Sign-up-n6im.png" alt="" />
                     </div>
-                    <div className="card flex-shrink-0 max-w-2xl shadow-2xl bg-base-100" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                    <div className="card flex-shrink-0 max-w-2xl shadow-2xl bg-base-100">
                         <div className='bg-teal-600 p-6 text-white rounded-t-lg'>
                             <h1 className='text-3xl font-semibold'>create account</h1>
                             <label className="label font-semibold text-lg">

@@ -3,6 +3,7 @@ import UseHooks from "../Components/Hooks/UseHooks";
 
 const Navbar = () => {
 
+    
     const { user, logOut } = UseHooks();
     
 
@@ -16,8 +17,8 @@ const Navbar = () => {
 
     return (
         <div>
-            <div className="navbar bg-base-100" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
-                <div className="navbar-start" data-aos="fade-down">
+            <div className="navbar bg-base-100">
+                <div className="navbar-start">
                     <div className="dropdown">
                         <label tabIndex={0} className="btn btn-ghost lg:hidden">
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
@@ -29,7 +30,7 @@ const Navbar = () => {
                     <Link to='/' className="w-12"><img src="https://i.ibb.co/phvWTDq/Logo.png" alt="" /></Link>
                     <Link to='/' className="font-bold text-xl text-teal-400"><p>JobZenith</p></Link>
                 </div>
-                <div className="navbar-center hidden lg:flex" data-aos="fade-down">
+                <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
                         {navLink}
                     </ul>
@@ -37,7 +38,7 @@ const Navbar = () => {
                 <div className="navbar-end">
 
                     {
-                        user ? <div className="dropdown dropdown-end" data-aos="fade-down">
+                        user?.email ? <div className="dropdown dropdown-end">
                             <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
                                 <div className="w-10 rounded-full">
                                     <img src={user.photoURL} />
@@ -55,7 +56,7 @@ const Navbar = () => {
                         </div>
                             :
                             <Link to='/login'>
-                                <button className="btn btn-ghost text-teal-400 border-2 border-teal-500 hover:text-white hover:bg-teal-400" data-aos="fade-down">Sign In</button>
+                                <button className="btn btn-ghost text-teal-400 border-2 border-teal-500 hover:text-white hover:bg-teal-400">Sign In</button>
                             </Link>
                     }
                 </div>

@@ -36,10 +36,10 @@ const Login = () => {
         <>
             <div className="justify-center md:my-0 my-10">
                 <div className="lg:hero-content lg:flex lg:flex-row-reverse md:m-20 mx-6">
-                    <div className="text-center" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="500">
+                    <div className="text-center">
                         <img className='md:max-w-lg max-w-sm' src="https://i.ibb.co/HpVCpNh/undraw-Sign-in-re-o58h.png" alt="" />
                     </div>
-                    <div className="card flex-shrink-0 max-w-3xl shadow-2xl" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                    <div className="card flex-shrink-0 max-w-3xl shadow-2xl">
                         <div className='bg-teal-600 p-6 text-white rounded-t-lg'>
                             <h1 className='text-3xl font-semibold'>Sign in</h1>
                             <label className="label font-semibold md:text-lg">
