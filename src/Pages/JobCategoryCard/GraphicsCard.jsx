@@ -8,7 +8,7 @@ const GraphicsCard = ({ graphics }) => {
     const [graphicsCard, setGraphicsCard] = useState([]);
 
     useEffect(() => {
-        fetch(`http://localhost:5000/${graphics}`)
+        fetch(`https://job-zenith-server.vercel.app/${graphics}`)
             .then(res => res.json())
             .then(data => {
                 setGraphicsCard(data);

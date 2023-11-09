@@ -34,7 +34,7 @@ const UpdateJobPost = () => {
 
 
 
-        fetch(`http://localhost:5000/job/${_id}`, {
+        fetch(`https://job-zenith-server.vercel.app/job/${_id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'

@@ -49,12 +49,12 @@ const Routes = createBrowserRouter([
             {
                 path: '/details/:id',
                 element: <PrivateRoute><JobDetails></JobDetails></PrivateRoute>,
-                loader: ({params}) => fetch(`http://localhost:5000/job/${params.id}`)
+                loader: ({params}) => fetch(`https://job-zenith-server.vercel.app/job/${params.id}`)
             },
             {
                 path: '/update/:id',
                 element: <PrivateRoute><UpdateJobPost></UpdateJobPost></PrivateRoute>,
-                loader: ({params}) => fetch(`http://localhost:5000/job/${params.id}`)
+                loader: ({params}) => fetch(`https://job-zenith-server.vercel.app/job/${params.id}`)
             }
         ]
     }

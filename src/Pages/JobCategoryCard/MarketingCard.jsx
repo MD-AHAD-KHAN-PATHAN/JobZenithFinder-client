@@ -6,7 +6,7 @@ const MarketingCard = ({ digital }) => {
     const [digitalCard, setDigitalCard] = useState([]);
 
     useEffect(() => {
-        fetch(`http://localhost:5000/${digital}`)
+        fetch(`https://job-zenith-server.vercel.app/${digital}`)
             .then(res => res.json())
             .then(data => {
                 setDigitalCard(data);

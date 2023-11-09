@@ -14,7 +14,7 @@ const BidRequestTable = ({ item, myBidRequested, setMyBidRequested }) => {
             status: "rejected"
         };
 
-        fetch(`http://localhost:5000/mybid/${_id}`, {
+        fetch(`https://job-zenith-server.vercel.app/mybid/${_id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'
@@ -43,7 +43,7 @@ const BidRequestTable = ({ item, myBidRequested, setMyBidRequested }) => {
             status: "in progress"
         };
 
-        fetch(`http://localhost:5000/mybid/${_id}`, {
+        fetch(`https://job-zenith-server.vercel.app/mybid/${_id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'

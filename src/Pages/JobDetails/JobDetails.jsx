@@ -38,7 +38,7 @@ const JobDetails = () => {
         const mybid = { sellerEmail, ByerEmail, title, photo, jobCategory, price, SellerDeadline, ByerDeadline, status }
 
 
-        fetch('http://localhost:5000/mybid', {
+        fetch('https://job-zenith-server.vercel.app/mybid', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

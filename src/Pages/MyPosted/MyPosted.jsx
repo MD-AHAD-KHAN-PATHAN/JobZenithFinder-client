@@ -11,7 +11,7 @@ const MyPosted = () => {
 
 
     useEffect(() => {
-        fetch(`http://localhost:5000/job?email=${user.email}`)
+        fetch(`https://job-zenith-server.vercel.app/job?email=${user.email}`)
             .then(res => res.json())
             .then(data => {
                 setMypostedJobs(data);

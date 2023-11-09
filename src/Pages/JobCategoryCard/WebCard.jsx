@@ -7,7 +7,7 @@ const WebCard = ({ web }) => {
     const [webCard, setWebCard] = useState([]);
 
     useEffect(() => {
-        fetch(`http://localhost:5000/${web}`)
+        fetch(`https://job-zenith-server.vercel.app/${web}`)
             .then(res => res.json())
             .then(data => {
                 setWebCard(data);

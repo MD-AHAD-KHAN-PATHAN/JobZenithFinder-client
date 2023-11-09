@@ -25,7 +25,7 @@ const PostCard = ({ item, mypostedjobs, setMypostedJobs }) => {
             reverseButtons: true
         }).then((result) => {
             if (result.isConfirmed) {
-                fetch(`http://localhost:5000/job/${_id}`, {
+                fetch(`https://job-zenith-server.vercel.app/job/${_id}`, {
                     method: 'DELETE',
                 })
                 .then(res => res.json())

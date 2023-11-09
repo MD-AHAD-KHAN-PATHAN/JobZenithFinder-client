@@ -13,7 +13,7 @@ const BidTable = ({item}) => {
             status: "complete"
         };
 
-        fetch(`http://localhost:5000/mybid/${_id}`, {
+        fetch(`https://job-zenith-server.vercel.app/mybid/${_id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'

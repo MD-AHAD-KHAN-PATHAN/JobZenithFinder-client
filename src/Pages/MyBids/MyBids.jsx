@@ -11,7 +11,7 @@ const MyBids = () => {
     const sellerMail = user.email;
 
     useEffect(() => {
-        fetch(`http://localhost:5000/mybid?sellerMail=${sellerMail}`)
+        fetch(`https://job-zenith-server.vercel.app/mybid?sellerMail=${sellerMail}`)
             .then(res => res.json())
             .then(data => {
                 setMyBidJobs(data);
