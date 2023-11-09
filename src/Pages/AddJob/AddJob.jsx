@@ -37,8 +37,8 @@ const AddJob = () => {
 
         const jobDetails = { email, title, deadline, description, maximum, minimum, photo, jobCategory }
 
-        console.log(jobDetails)
-
+        // http://localhost:5000/
+        // https://job-zenith-server.vercel.app/
         fetch('http://localhost:5000/job', {
             method: 'POST',
             headers: {

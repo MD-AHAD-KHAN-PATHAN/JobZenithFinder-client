@@ -55,7 +55,7 @@ const Registration = () => {
     return (
         <>
             <div className="md:my-20 my-10">
-                <div className="md:hero-content md:mx-0 mx-6">
+                <div className="lg:hero-content lg:flex lg:flex-row-reverse md:m-20 mx-6">
                     <div className="text-center md:text-left">
                         <img className='md:max-w-lg max-w-sm' src="https://i.ibb.co/x1dw8nN/undraw-Sign-up-n6im.png" alt="" />
                     </div>

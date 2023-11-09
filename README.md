@@ -6,10 +6,9 @@
 ## [ Server Side Private repo](https://github.com/Porgramming-Hero-web-course/b8a11-server-side-MD-AHAD-KHAN-PATHAN)
 
 
+## [ Live Link ](url)
 
-## [ Live Link ](https://astounding-basbousa-370fa6.netlify.app/)
-
-Click here for the live project link : [https://astounding-basbousa-370fa6.netlify.app/]
+Click here for the live project link : [url]
 
 # About My Project
 

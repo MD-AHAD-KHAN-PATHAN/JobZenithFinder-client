@@ -11,7 +11,7 @@ const MyBids = () => {
     const sellerMail = user.email;
 
     useEffect(() => {
-        fetch(`http://localhost:5000/mybid?sellerMail=${sellerMail}`, {credentials: 'include'})
+        fetch(`http://localhost:5000/mybid?sellerMail=${sellerMail}`)
             .then(res => res.json())
             .then(data => {
                 setMyBidJobs(data);
