@@ -2,7 +2,7 @@ import { AiFillFacebook, AiFillInstagram, AiFillLinkedin, AiFillTwitterSquare } 
 
 const Footer = () => {
     return (
-        <footer className="footer p-10 bg-base-200 text-base-content">
+        <footer className="footer p-10 bg-base-200 text-base-content mb-20">
             <aside>
                 <img className="w-20" src="https://i.ibb.co/phvWTDq/Logo.png" alt="" />
                 <p>Job Zenith Ltd.<br />Providing reliable service since 2015</p>
