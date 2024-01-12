@@ -1,9 +1,7 @@
 # JobZenith
 
 
-## [ Client Side Private repo](https://github.com/Porgramming-Hero-web-course/b8a11-client-side-MD-AHAD-KHAN-PATHAN)
-
-## [ Server Side Private repo](https://github.com/Porgramming-Hero-web-course/b8a11-server-side-MD-AHAD-KHAN-PATHAN)
+## [ Server Side ](https://github.com/MD-AHAD-KHAN-PATHAN/JobZenith-server)
 
 
 ## [ Live Link ](https://hilarious-kheer-c87618.netlify.app/)
@@ -16,7 +14,7 @@ Click here for the live project link : [https://hilarious-kheer-c87618.netlify.a
 
 - Firebase Authentication: Users can sign up, log in, and enjoy personalized experiences through Firebase authentication, ensuring their data is secure.
 
-- MongoDB Database: This project utilizes MongoDB as a NoSQL database to store and manage data such as job details, and user biding information.
+- MongoDB Database: This project utilizes MongoDB as a NoSQL database to store and manage data such as job details, and user bidding information.
 
 - Express.js Server: For server-side functionality, Express.js is employed to create APIs for adding, updating, and deleting job details, as well as handling user interactions.
 
@@ -26,14 +24,14 @@ Click here for the live project link : [https://hilarious-kheer-c87618.netlify.a
 
 - Job Functionality: My project incorporates a job feature, allowing users to add job post details to their cart for future reference.
 
-- Adding Job post: Registered users can add new job post to the database, contributing to the catalog and keeping it up-to-date.
+- Adding Job Post: Registered users can add new job posts to the database, contributing to the catalog and keeping it up-to-date.
 
 - Updating Job Details: Users can update existing their job information, ensuring the information remains accurate and relevant.
 
-- Job Data Management: The project enables users to add, update, and remove jobs post their cart, creating a seamless and user-friendly Buy experience.
+- Job Data Management: The project enables users to add, update, and remove jobs posted in their cart, creating a seamless and user-friendly Buy experience.
 
 - Responsive Design: This project is not only feature-rich but also offers a responsive design, ensuring an optimal viewing experience on various devices, including desktops, tablets, and mobile phones.
 
-- Seamless User Experience: With Firebase authentication, MongoDB storage, and Express.js server functionality, My project offers a complete and engaging platform for job finder to explore, interact with, and potentially grab their dream jobs.
+- Seamless User Experience: With Firebase authentication, MongoDB storage, and Express.js server functionality, My project offers a complete and engaging platform for job finders to explore, interact with, and potentially grab their dream jobs.
 
 
